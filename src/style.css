@@ -2,60 +2,88 @@
 body{
 	margin: auto 0;
     font-family: 'Metal Mania', cursive;
-}
+	
+	//background:#000000;
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-gap: 20px;
-    height: 100vh;
-    
+	
+	
 }
-
 .zone {
 
+    //display: flex;
+    //font-size:2em;
+    //border-radius:4px;
+    //border:1px solid #bbb;
+    transition: all 0.3s linear;
+	
+	
+}
+
+.zone:hover {
+    //-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    //-moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    //-o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    //box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 
-.profile{
-    background-image: url("img/profile.jpg");
-    background-size: cover;
-    grid-column-start: : 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.text{
-    grid-column-start: : 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: #e02121 !important;
-    text-align: center;
-}
-
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
 .main-nav{
     display: flex;
     list-style: none;
     margin: 0;
 }
 
+@media only screen and (max-width: 1000px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+	.grid-wrapper { grid-template-columns: repeat(1, 1fr); }
+	.profile-img {
+		max-width: 350px;
+		max-height: 350px;	
+	}
+
+}
+
+
+
+@media only screen and (min-height: 600px) {
+	body{
+		height: auto;
+		background:#000000;
+	}
+
+}
+
+@media only screen and (max-height: 601px) {
+	body{
+		height: auto;
+		background: -moz-linear-gradient(bottom, #e02121 0%, #000000 20%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #000000), color-stop(100%,#e02121)); /* Chrome,Safari4+ */
+	}
+
+}
+
+@media only screen and (min-width: 1001px) {
+	.grid-wrapper { grid-template-columns: 100px 1fr 1fr 100px; }
+	.profile{ grid-column-start: 2;}
+	.text{ 
+		grid-column-start: 3;
+		font-size: 1.3em;
+	}
+	.profile-img {
+		max-width: 500px;
+		max-height: 500px;	
+		align-self: center;
+	}
+}
+
 .push{
     margin-left: auto;
-}
-
-h1{
-    font-size: 4em;
-}
-
-h2{
-    font-size: 2em;
-}
-
-p{
-    font-size: 1.5em;
 }
 
 li{
@@ -65,6 +93,86 @@ li{
 a{
     color: black;
 }
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.container{
+    //display: flex;
+	//align-items: center;
+    //justify-content: center;
+    //grid-template-columns: 50px auto 50px;
+	//grid-template-rows: 1fr 1fr;
+    //grid-gap: 20px;
+	//align-items: top;
+	//height: 100vh;
+}
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.grid-wrapper {
+	
+    display: grid;
+    //grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+	//grid-template-rows: auto-flow;
+    grid-gap: 20px;
+	//align-items: center;
+ 
+}
+
+.box {
+    //background-color: #444;
+    padding: 20px;
+    margin: 20px;
+	justify-self: center;
+	
+	
+}
+
+.box > img {
+	justify-self: center;
+    width: 100%;
+
+}
+
+.profile{
+	//grid-column-start: 1;
+	//grid-column-end: 1;
+
+
+}
+
+.profile-img {
+	border-radius: 75%;	
+}
+
+.text{
+
+    color: #e02121 !important;
+    text-align: center;
+	//grid-column-start: 1;
+	//grid-column-start: 2;
+	//grid-column: (end - 1)/end;
+
+}
+
+
+
+
+
+h1{
+    //font-size: 4em;
+}
+
+h2{
+    //font-size: 2em;
+}
+
+p{
+    //font-size: 1.5em;
+}
+
+
 
 
 /***********************************************************************
@@ -85,7 +193,12 @@ a{
  *  Black Background
  **********************************************************************/
 .black{
-    background: #000000; /* Old browsers */
+    //background: #000000; /* Old browsers */
+	//background: -moz-linear-gradient(bottom, #e02121 0%, #000000 100%); /* FF3.6+ */
+	//background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #000000), color-stop(100%,#e02121)); /* Chrome,Safari4+ */
+	//grid-row: 1/-1
+	
+	
 }
 
 
