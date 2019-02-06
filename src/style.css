@@ -2,28 +2,19 @@
 body{
 	margin: auto 0;
     font-family: 'Metal Mania', cursive;
-	
-	//background:#000000;
-
-	
-	
+	text-align: center;	
 }
 .zone {
-
-    //display: flex;
-    //font-size:2em;
-    //border-radius:4px;
-    //border:1px solid #bbb;
-    transition: all 0.3s linear;
-	
-	
+    border-radius:4px;
+    border:1px solid #494949;
+    transition: all 0.1s linear;	
 }
 
 .zone:hover {
-    //-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    //-moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    //-o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    //box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-box-shadow:rgba(249,249,249,0.8) 0px 5px 15px, inset rgba(49,249,249,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(249,249,249,0.8) 0px 5px 15px, inset rgba(49,249,249,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(249,249,249,0.8) 0px 5px 15px, inset rgba(49,249,249,0.15) 0px -10px 20px;
+    box-shadow:rgba(249,249,249,0.8) 0px 5px 15px, inset rgba(49,249,249,0.15) 0px -10px 20px;
 }
 
 
@@ -34,6 +25,7 @@ body{
     display: flex;
     list-style: none;
     margin: 0;
+    font-size: 0.7em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -49,12 +41,16 @@ body{
 
 }
 
-
-
 @media only screen and (min-height: 600px) {
 	body{
 		height: auto;
 		background:#000000;
+	}
+	
+	embed{
+		width: 1000px;
+		height: 1000px;
+		margin: auto;  
 	}
 
 }
@@ -94,52 +90,27 @@ a{
     color: black;
 }
 
-/***********************************************************************
- *  Cover
- **********************************************************************/
-.container{
-    //display: flex;
-	//align-items: center;
-    //justify-content: center;
-    //grid-template-columns: 50px auto 50px;
-	//grid-template-rows: 1fr 1fr;
-    //grid-gap: 20px;
-	//align-items: top;
-	//height: 100vh;
+h3{
+	font-family: 'Inconsolata', monospace;
 }
+
 /***********************************************************************
  *  Grid Panel
  **********************************************************************/
 .grid-wrapper {
-	
     display: grid;
-    //grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-	//grid-template-rows: auto-flow;
-    grid-gap: 20px;
-	//align-items: center;
- 
+    grid-gap: 20px; 
 }
 
 .box {
-    //background-color: #444;
     padding: 20px;
     margin: 20px;
 	justify-self: center;
-	
-	
 }
 
 .box > img {
 	justify-self: center;
     width: 100%;
-
-}
-
-.profile{
-	//grid-column-start: 1;
-	//grid-column-end: 1;
-
-
 }
 
 .profile-img {
@@ -147,33 +118,49 @@ a{
 }
 
 .text{
-
     color: #e02121 !important;
-    text-align: center;
-	//grid-column-start: 1;
-	//grid-column-start: 2;
-	//grid-column: (end - 1)/end;
-
+    
 }
 
-
-
-
-
-h1{
-    //font-size: 4em;
+.grid-wrapper-proj {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
 }
 
-h2{
-    //font-size: 2em;
+.box-proj {
+    background-color: #494949;
+    padding: 80px;
+    margin: 20px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	font-family: 'Permanent Marker', cursive;
 }
 
-p{
-    //font-size: 1.5em;
+.box-proj > img {
+    width: 8em;
+	height: 8em;
 }
 
+.container {
+    /*show heigh: auto*/
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+embed{
+	width: 600px;
+	height: 600px;
+	margin: auto;  
+}
 
+.proj-list{
+	list-style: none;
+}
 
 /***********************************************************************
  *  Red Background
@@ -193,12 +180,7 @@ p{
  *  Black Background
  **********************************************************************/
 .black{
-    //background: #000000; /* Old browsers */
-	//background: -moz-linear-gradient(bottom, #e02121 0%, #000000 100%); /* FF3.6+ */
-	//background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #000000), color-stop(100%,#e02121)); /* Chrome,Safari4+ */
-	//grid-row: 1/-1
-	
-	
+    background: #000000; /* Old browsers */
 }
 
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Cameron Jackson | Portfolio</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Metal+Mania|Permanent+Marker" rel="stylesheet">
+	  <script language="JavaScript">
+			function writeLink(){
+				var operation = "mailto:"
+				var username = "cjjackson343";
+				var hostname = "gmail.com";
+				var linktext = operation + username + "@" + hostname;
+				
+				var a = document.getElementById("contact");
+				a.setAttribute("href", linktext);
+			}
+		</script>
+	</head>
+	<body class=" black">
+		<nav class="zone red">
+			<ul class="main-nav">
+				<li class="home">
+					<a href="index.html" title="Home">
+						<i class="material-icons">home</i>
+					</a> 
+				</li>
+				<li>
+					<a href="projects.html" title="Projects">
+						<i class="material-icons">work</i></i>
+					</a>
+				</li>
+				<li>
+					<a href="resume.html" title="Resume">
+						<i class="material-icons">file_copy</i>
+					</a>
+				</li>
+				<li class="push">
+					<a id="contact" href="" title="Contact me">
+						<i class="material-icons">contact_support</i>
+					</a>
+					<a href="https://github.com/cjj343" title="Github">
+						<img src="../img/GitHub-Mark-32px.png">
+					</a>
+				</li>
+			</ul>	
+		</nav>
+		<div class="black grid-wrapper-proj">
+			<div class="box-proj zone">
+				<h1>Hack</h1>
+				<img src="../img/nand2tetris.png" title="https://www.nand2tetris.org/">
+				<h3>A 16-bit computer built from the ground up.</h3>
+			</div>
+			<div class="box-proj zone">
+					<h1>Snake Clone</h1>
+					<img src="../img/snake.png">
+					<h3>A Snake clone to run on the Hack platform.  Written in Jack.</h3>
+			</div>
+			<div class="box-proj zone">
+				<h1>Custom PC</h1>
+				<img src="../img/monitor_settings_2.png">
+				<h3>Ryzen 7 - 32 GB RAM - GeForce GTX 1070 8 GB </h3>
+				
+			</div>
+			<div class="box-proj zone">
+				<h1>Recognition</h1>
+				<img src="../img/server_3.png">
+				<h3>Application detects faces in an image.  Built with React, Clarifai, Node.js and Express.</h3>
+			</div>
+			<!--
+			<div class="box-proj zone"><img src="../img/data_storage_2_2.png"></div>
+			<div class="box-proj zone"><img src="../img/monitor_coding_2.png"></div>
+			<div class="box-proj zone"><img src="../img/desktop_analytics_2.png"></div>
+			<div class="box-proj zone"><img src="../img/server_safe_2.png"></div>
+			-->
+		</div>
+	</body>
+</html>
